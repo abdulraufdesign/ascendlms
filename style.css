@@ -21,7 +21,7 @@ code{
   right: 0;
 }
 .projcontainer{
-  background-color: #f3f3fc;
+  background-color: var(--blue);
   >div div:nth-of-type(2n){
     display: flex;
     flex-direction: column;
@@ -47,21 +47,26 @@ code{
     p{
       color: var(--black);
     }
-    >i{
-      padding: 12px;
-      background-color: #ffffff;
-      color: #3C3ACF;
-      border-radius: 100px;
-    }
   }
-  >svg{
-    align-self: center;
-    justify-self: center;
-  }
+}
+.comparison-table .icon-cell {
+  text-align: start;
+}
+.ph-check {
+  color: #46BD84;
+}
+
+.ph-x {
+  color: #CF3A3A;
 }
 
 html.second .projcontainer{
   background-color: #17165A;
+}
+
+.flex-col strong {
+  position: relative;
+  top: -3rem;
 }
 
 .grid > .proj-img img{
